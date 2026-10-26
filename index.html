@@ -36,6 +36,10 @@
 
   <!-- 课件阅读页 -->
   <div class="reader" id="readerView" style="display:none">
+    <div class="reader-toolbar">
+      <button class="btn-back" id="btnBackReader">← 返回目录</button>
+      <span class="toolbar-hint">Esc 返回 · ←/→ 切换章节</span>
+    </div>
     <div class="reader-card">
       <p class="reader-crumb" id="readerCrumb"></p>
       <h2 class="reader-title" id="readerTitle"></h2>
@@ -77,8 +81,7 @@ function esc(s) { return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(
 /* ---------- 渲染: 课程列表项(侧边栏/抽屉共用) ---------- */
 function courseBtnHTML(c, active) {
   return `<button type="button" class="course-btn ${active ? 'active' : ''}" data-id="${c.id}">
-    <p class="t" style="truncate">${esc(c.title)}</p>
-    <p class="s">${esc(c.teacher)}</p></button>`;
+    <p class="t" style="truncate">${esc(c.title)}</p></button>`;
 }
 
 function bindCourseClicks(root) {
@@ -107,7 +110,6 @@ function closeDrawer() { $('drawerMask').classList.remove('open'); }
 function renderTOC() {
   $('tocView').style.display = '';
   $('readerView').style.display = 'none';
-  $('headerInner').classList.remove('has-back');
   $('fab').style.display = '';
   document.title = '《Agent 应用开发》- 课程笔记';
 
@@ -120,7 +122,6 @@ function renderTOC() {
     <article class="course-card" id="course-${c.id}">
       <div class="card-head">
         <h2 class="card-title">${esc(c.title)}</h2>
-        <span class="card-teacher">${esc(c.teacher)}</span>
       </div>
       <div class="card-meta"><span>${esc(c.crumb)}</span></div>
       <ol class="chapters">
@@ -139,8 +140,7 @@ function renderTOC() {
 async function renderReader(courseId, no) {
   $('tocView').style.display = 'none';
   $('readerView').style.display = '';
-  $('headerInner').classList.add('has-back');
-  $('fab').style.display = 'none';
+  $('fab').style.display = '';   // 阅读页也保留课程导航(移动端可快速跳课程)
   closeDrawer();
 
   const c = COURSES.find(x => x.id === courseId);
@@ -149,7 +149,8 @@ async function renderReader(courseId, no) {
   if (!ch) { go(courseId); return; }
 
   document.title = `${ch.title} - ${c.title}`;
-  $('readerCrumb').textContent = c.crumb;
+  $('readerCrumb').innerHTML =
+    `<a href="#/">全部课程</a><span class="crumb-sep">/</span><a href="#/course/${c.id}">${esc(c.title)}</a>`;
   $('readerTitle').textContent = `${no}. ${ch.title}`;
 
   // 上一节 / 下一节
@@ -184,6 +185,22 @@ function render() {
   else renderTOC();
 }
 
+/* ---------- 阅读页快捷键: Esc 返回目录, ←/→ 切换章节 ---------- */
+document.addEventListener('keydown', e => {
+  const r = parseHash();
+  if (!r || r.no == null) return;                 // 仅阅读页生效
+  if (e.key === 'Escape') { location.hash = '#/course/' + r.course; return; }
+  if (e.key !== 'ArrowLeft' && e.key !== 'ArrowRight') return;
+  const c = COURSES.find(x => x.id === r.course);
+  if (!c) return;
+  const idx = c.chapters.findIndex(x => x.no === r.no);
+  const target = c.chapters[idx + (e.key === 'ArrowRight' ? 1 : -1)];
+  if (target && target.note && !e.ctrlKey && !e.metaKey &&
+      !/INPUT|TEXTAREA/.test(document.activeElement.tagName)) {
+    go(c.id, target.no);
+  }
+});
+
 /* ---------- 初始化 ---------- */
 async function init() {
   // 侧边栏高亮当前课程
@@ -203,6 +220,7 @@ async function init() {
   render();
 
   $('btnBack').addEventListener('click', () => location.hash = '#/');
+  $('btnBackReader').addEventListener('click', () => location.hash = '#/');
   $('fab').addEventListener('click', openDrawer);
   $('drawerClose').addEventListener('click', closeDrawer);
   $('drawerMask').addEventListener('click', e => { if (e.target === e.currentTarget) closeDrawer(); });
