@@ -1,0 +1,153 @@
+/* 课程笔记站点 - 复刻原型视觉(Tailwind slate/blue 风格), 含移动端适配 */
+* { box-sizing: border-box; border: 0 solid #e5e7eb; margin: 0; padding: 0; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  line-height: 1.5;
+  background: #f6f8fb;
+  color: #0f172a;
+  overflow-x: hidden;
+}
+a { text-decoration: inherit; color: inherit; }
+button { font: inherit; background: none; border: none; cursor: pointer; color: inherit; }
+
+/* ---------- 顶栏 ---------- */
+.site-header {
+  position: sticky; top: 0; z-index: 30;
+  border-bottom: 1px solid #e2e8f0;
+  background: #fff; box-shadow: 0 1px 2px rgba(0,0,0,.05);
+}
+.header-inner {
+  max-width: 1240px; margin: 0 auto; height: 56px;
+  display: flex; align-items: center; padding: 0 16px;
+}
+.header-left { display: none; width: 100%; align-items: center; justify-content: space-between; }
+.header-tag { font-size: 12px; font-weight: 600; letter-spacing: .18em; color: #64748b; }
+.header-title { font-size: 20px; font-weight: 600; }
+.header-count { font-size: 14px; color: #475569; }
+.header-mobile { display: flex; width: 100%; align-items: center; justify-content: space-between; }
+.header-mobile h1 { font-size: 18px; font-weight: 600; }
+.btn-back {
+  display: none; align-items: center; gap: 4px;
+  font-size: 14px; color: #2563eb; padding: 4px 8px; border-radius: 8px;
+}
+.btn-back:hover { background: #eff6ff; }
+
+/* ---------- 布局 ---------- */
+.page { max-width: 1240px; margin: 0 auto; padding: 20px 16px; }
+.layout { display: grid; gap: 20px; }
+
+/* ---------- 侧边栏(桌面) ---------- */
+.sidebar { display: none; }
+.sidebar-inner {
+  position: sticky; top: 84px;
+  max-height: calc(100vh - 112px); overflow-y: auto;
+  border: 1px solid #e2e8f0; border-radius: 16px;
+  background: #fff; padding: 16px; box-shadow: 0 1px 2px rgba(0,0,0,.05);
+}
+.course-btn { display: block; width: 100%; text-align: left; padding: 4px 0; margin-bottom: 8px; border-radius: 8px; }
+.course-btn .t { font-size: 14px; font-weight: 500; color: #334155; transition: color .15s; }
+.course-btn .s { margin-top: 4px; font-size: 12px; color: #64748b; }
+.course-btn:hover .t { color: #2563eb; }
+.course-btn.active .t { font-weight: 600; color: #2563eb; }
+.course-btn.active .s { color: #3b82f6; }
+
+/* ---------- 主区 ---------- */
+.main { min-width: 0; }
+.course-card {
+  margin-bottom: 16px; min-height: 200px; min-width: 0;
+  border: 1px solid #e2e8f0; border-radius: 16px;
+  background: #fff; padding: 20px; box-shadow: 0 1px 2px rgba(0,0,0,.05);
+  scroll-margin-top: 64px;
+}
+.card-head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; border-bottom: 1px solid #f1f5f9; padding-bottom: 12px; min-width: 0; }
+.card-title { font-size: 18px; font-weight: 600; min-width: 0; overflow-wrap: anywhere; }
+.card-teacher { flex-shrink: 0; font-size: 13px; color: #64748b; }
+.card-meta { margin-top: 10px; font-size: 13px; color: #64748b; display: flex; flex-wrap: wrap; gap: 6px 16px; }
+.card-meta a { color: #2563eb; }
+.card-meta a:hover { text-decoration: underline; }
+.chapters { margin-top: 14px; }
+.chapters li { list-style: none; }
+.chapters a, .chapters .pending {
+  display: block; padding: 7px 10px; border-radius: 8px;
+  font-size: 15px; line-height: 1.75; color: #334155;
+}
+.chapters a:hover { background: #f1f5f9; color: #2563eb; }
+.chapters .no { margin-right: 8px; font-weight: 600; color: #64748b; }
+.chapters .pending { color: #94a3b8; cursor: default; }
+.badge-new { margin-left: 8px; font-size: 11px; color: #16a34a; background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 999px; padding: 1px 8px; vertical-align: 1px; }
+
+/* ---------- 课件阅读页 ---------- */
+.reader { max-width: 900px; margin: 0 auto; }
+.reader-card {
+  border: 1px solid #e2e8f0; border-radius: 16px;
+  background: #fff; padding: 28px 24px; box-shadow: 0 1px 2px rgba(0,0,0,.05);
+}
+.reader-crumb { font-size: 13px; color: #64748b; margin-bottom: 6px; }
+.reader-title { font-size: 24px; font-weight: 700; margin-bottom: 18px; }
+.reader-nav { display: flex; justify-content: space-between; gap: 12px; margin-top: 28px; padding-top: 16px; border-top: 1px solid #f1f5f9; }
+.reader-nav a {
+  max-width: 48%; padding: 10px 14px; border: 1px solid #e2e8f0; border-radius: 10px;
+  font-size: 14px; color: #334155; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.reader-nav a:hover { border-color: #93c5fd; color: #2563eb; background: #f8fafc; }
+.loading, .error-tip { padding: 60px 0; text-align: center; color: #94a3b8; font-size: 15px; }
+
+/* ---------- markdown 正文 ---------- */
+.md { font-size: 15px; line-height: 1.8; color: #1e293b; overflow-wrap: break-word; }
+.md h1, .md h2, .md h3, .md h4 { font-weight: 600; margin: 1.4em 0 .6em; line-height: 1.4; }
+.md h1 { font-size: 1.6em; } .md h2 { font-size: 1.35em; border-bottom: 1px solid #f1f5f9; padding-bottom: .3em; }
+.md h3 { font-size: 1.15em; } .md h4 { font-size: 1em; }
+.md p { margin: .7em 0; }
+.md ul, .md ol { padding-left: 1.6em; margin: .6em 0; }
+.md ul { list-style: disc; } .md ol { list-style: decimal; }
+.md li { margin: .25em 0; }
+.md a { color: #2563eb; } .md a:hover { text-decoration: underline; }
+.md blockquote { margin: .8em 0; padding: .5em 1em; border-left: 4px solid #93c5fd; background: #f8fafc; color: #475569; border-radius: 0 8px 8px 0; }
+.md code { background: #f1f5f9; border-radius: 4px; padding: 2px 6px; font-size: .875em; font-family: ui-monospace, Consolas, monospace; }
+.md pre { margin: .9em 0; padding: 0; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; overflow-x: auto; }
+.md pre code { display: block; padding: 1em; background: none; font-size: 13px; line-height: 1.6; }
+.md table { border-collapse: collapse; margin: .9em 0; width: 100%; display: block; overflow-x: auto; }
+.md th, .md td { border: 1px solid #e2e8f0; padding: 6px 12px; font-size: 14px; text-align: left; }
+.md th { background: #f8fafc; font-weight: 600; }
+.md img { max-width: 100%; height: auto; border-radius: 8px; margin: .5em 0; }
+.md hr { margin: 1.4em 0; border-top: 1px solid #e2e8f0; }
+
+/* ---------- 移动端课程导航抽屉 ---------- */
+.fab {
+  position: fixed; bottom: 24px; right: 16px; z-index: 40;
+  padding: 8px 16px; font-size: 14px; font-weight: 500; color: #334155;
+  background: #fff; border: 1px solid #cbd5e1; border-radius: 999px;
+  box-shadow: 0 4px 8px rgba(0,0,0,.12);
+}
+.drawer-mask {
+  position: fixed; inset: 0; z-index: 50; padding: 16px;
+  background: rgba(15,23,42,.3); display: none;
+}
+.drawer-mask.open { display: block; }
+.drawer {
+  margin-left: auto; height: 100%; width: min(86vw, 320px);
+  overflow-y: auto; border-radius: 16px; background: #fff; padding: 12px;
+  box-shadow: -8px 0 24px rgba(0,0,0,.15);
+}
+.drawer-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+.drawer-head h2 { font-size: 16px; font-weight: 600; }
+.drawer-close { font-size: 14px; color: #64748b; padding: 4px 8px; }
+.drawer-close:hover { color: #2563eb; }
+
+/* ---------- 响应式 ---------- */
+@media (min-width: 1024px) {
+  .header-left { display: flex; }
+  .header-mobile { display: none; }
+  .header-inner.has-back .header-left { display: none; }
+  .header-inner.has-back .header-mobile { display: flex; }
+  .page { padding: 28px 40px; }
+  .layout { grid-template-columns: 300px minmax(0, 1fr); gap: 28px; }
+  .sidebar { display: block; }
+  .fab, .drawer-mask { display: none !important; }
+  .course-card { padding: 28px; }
+}
+@media (max-width: 1023.9px) {
+  .layout { grid-template-columns: 1fr; }
+  .sidebar { display: none; }
+}

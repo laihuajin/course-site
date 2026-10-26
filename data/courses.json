@@ -1,0 +1,1955 @@
+[
+  {
+    "id": "python-core",
+    "title": "Python语言核心精讲",
+    "teacher": "袁进",
+    "crumb": "AI大全栈 / Python / Python语言核心精讲",
+    "available": true,
+    "chapters": [
+      {
+        "no": 1,
+        "title": "必看导言",
+        "note": "notes/python-core/01-必看导言.md"
+      },
+      {
+        "no": 2,
+        "title": "python环境安装",
+        "note": "notes/python-core/02-python环境安装.md"
+      },
+      {
+        "no": 3,
+        "title": "python基本语法",
+        "note": "notes/python-core/03-python基本语法.md"
+      },
+      {
+        "no": 4,
+        "title": "容器类型",
+        "note": "notes/python-core/04-容器类型.md"
+      },
+      {
+        "no": 5,
+        "title": "函数",
+        "note": "notes/python-core/05-函数.md"
+      },
+      {
+        "no": 6,
+        "title": "作用域",
+        "note": "notes/python-core/06-作用域.md"
+      },
+      {
+        "no": 7,
+        "title": "lambda表达式",
+        "note": "notes/python-core/07-lambda表达式.md"
+      },
+      {
+        "no": 8,
+        "title": "类和对象",
+        "note": "notes/python-core/08-类和对象.md"
+      },
+      {
+        "no": 9,
+        "title": "对象的类型",
+        "note": "notes/python-core/09-对象的类型.md"
+      },
+      {
+        "no": 10,
+        "title": "对象的创建过程",
+        "note": "notes/python-core/10-对象的创建过程.md"
+      },
+      {
+        "no": 11,
+        "title": "可调用对象",
+        "note": "notes/python-core/11-可调用对象.md"
+      },
+      {
+        "no": 12,
+        "title": "元类",
+        "note": "notes/python-core/12-元类.md"
+      },
+      {
+        "no": 13,
+        "title": "装饰器",
+        "note": "notes/python-core/13-装饰器.md"
+      },
+      {
+        "no": 14,
+        "title": "魔术方法",
+        "note": "notes/python-core/14-魔术方法.md"
+      },
+      {
+        "no": 15,
+        "title": "描述符",
+        "note": "notes/python-core/15-描述符.md"
+      },
+      {
+        "no": 16,
+        "title": "异常处理",
+        "note": "notes/python-core/16-异常处理.md"
+      },
+      {
+        "no": 17,
+        "title": "迭代器与生成器",
+        "note": "notes/python-core/17-迭代器与生成器.md"
+      },
+      {
+        "no": 18,
+        "title": "上下文管理器",
+        "note": "notes/python-core/18-上下文管理器.md"
+      },
+      {
+        "no": 19,
+        "title": "ABC",
+        "note": "notes/python-core/19-ABC.md"
+      },
+      {
+        "no": 20,
+        "title": "类型标注",
+        "note": "notes/python-core/20-类型标注.md"
+      },
+      {
+        "no": 21,
+        "title": "模块化",
+        "note": "notes/python-core/21-模块化.md"
+      },
+      {
+        "no": 22,
+        "title": "标准库",
+        "note": "notes/python-core/22-标准库.md"
+      },
+      {
+        "no": 23,
+        "title": "第三方库",
+        "note": "notes/python-core/23-第三方库.md"
+      },
+      {
+        "no": 24,
+        "title": "事件循环",
+        "note": "notes/python-core/24-事件循环.md"
+      },
+      {
+        "no": 25,
+        "title": "Future类",
+        "note": "notes/python-core/25-Future类.md"
+      },
+      {
+        "no": 26,
+        "title": "协程 Coroutine",
+        "note": "notes/python-core/26-协程 Coroutine.md"
+      },
+      {
+        "no": 27,
+        "title": "异步编程",
+        "note": "notes/python-core/27-异步编程.md"
+      },
+      {
+        "no": 28,
+        "title": "多线程与多进程",
+        "note": "notes/python-core/28-多线程与多进程.md"
+      },
+      {
+        "no": 29,
+        "title": "构建发布",
+        "note": "notes/python-core/29-构建发布.md"
+      },
+      {
+        "no": 30,
+        "title": "项目管理工具",
+        "note": "notes/python-core/30-项目管理工具.md"
+      },
+      {
+        "no": 31,
+        "title": "monorepo",
+        "note": "notes/python-core/31-monorepo.md"
+      },
+      {
+        "no": 32,
+        "title": "断点调试",
+        "note": "notes/python-core/32-断点调试.md"
+      }
+    ]
+  },
+  {
+    "id": "database",
+    "title": "数据库",
+    "teacher": "袁进",
+    "crumb": "AI大全栈 / 通识 / 数据库",
+    "available": true,
+    "chapters": [
+      {
+        "no": 1,
+        "title": "PostgreSQL安装",
+        "note": "notes/database/01-PostgreSQL安装.md"
+      },
+      {
+        "no": 2,
+        "title": "DDL",
+        "note": "notes/database/02-DDL.md"
+      },
+      {
+        "no": 3,
+        "title": "表间关系",
+        "note": "notes/database/03-表间关系.md"
+      },
+      {
+        "no": 4,
+        "title": "DML",
+        "note": "notes/database/04-DML.md"
+      },
+      {
+        "no": 5,
+        "title": "事务",
+        "note": "notes/database/05-事务.md"
+      },
+      {
+        "no": 6,
+        "title": "索引",
+        "note": "notes/database/06-索引.md"
+      },
+      {
+        "no": 7,
+        "title": "拓展知识",
+        "note": "notes/database/07-拓展知识.md"
+      }
+    ]
+  },
+  {
+    "id": "python-framework",
+    "title": "Python框架",
+    "teacher": "袁进",
+    "crumb": "AI大全栈 / Python / Python框架",
+    "available": true,
+    "chapters": [
+      {
+        "no": 1,
+        "title": "Web服务框架",
+        "note": "notes/python-framework/01-Web服务框架.md"
+      },
+      {
+        "no": 2,
+        "title": "优化包结构",
+        "note": "notes/python-framework/02-优化包结构.md"
+      },
+      {
+        "no": 3,
+        "title": "初识SQLAlchemy",
+        "note": "notes/python-framework/03-初识SQLAlchemy.md"
+      },
+      {
+        "no": 4,
+        "title": "ORM",
+        "note": "notes/python-framework/04-ORM.md"
+      },
+      {
+        "no": 5,
+        "title": "数据操作",
+        "note": "notes/python-framework/05-数据操作.md"
+      },
+      {
+        "no": 6,
+        "title": "数据迁移",
+        "note": "notes/python-framework/06-数据迁移.md"
+      },
+      {
+        "no": 7,
+        "title": "业务逻辑",
+        "note": "notes/python-framework/07-业务逻辑.md"
+      },
+      {
+        "no": 8,
+        "title": "依赖注入",
+        "note": "notes/python-framework/08-依赖注入.md"
+      },
+      {
+        "no": 9,
+        "title": "统一异常处理",
+        "note": "notes/python-framework/09-统一异常处理.md"
+      },
+      {
+        "no": 10,
+        "title": "中间件",
+        "note": "notes/python-framework/10-中间件.md"
+      },
+      {
+        "no": 11,
+        "title": "测试框架",
+        "note": "notes/python-framework/11-测试框架.md"
+      },
+      {
+        "no": 12,
+        "title": "测试方案",
+        "note": "notes/python-framework/12-测试方案.md"
+      },
+      {
+        "no": 13,
+        "title": "三层架构",
+        "note": "notes/python-framework/13-三层架构.md"
+      },
+      {
+        "no": 14,
+        "title": "文件上传",
+        "note": "notes/python-framework/14-文件上传.md"
+      },
+      {
+        "no": 15,
+        "title": "系统设置",
+        "note": "notes/python-framework/15-系统设置.md"
+      },
+      {
+        "no": 16,
+        "title": "长事务和短事务",
+        "note": null
+      },
+      {
+        "no": 17,
+        "title": "用户系统",
+        "note": "notes/python-framework/17-用户系统.md"
+      },
+      {
+        "no": 18,
+        "title": "日志",
+        "note": "notes/python-framework/18-日志.md"
+      },
+      {
+        "no": 19,
+        "title": "AI导购",
+        "note": null
+      },
+      {
+        "no": 20,
+        "title": "流式响应",
+        "note": "notes/python-framework/20-流式响应.md"
+      },
+      {
+        "no": 21,
+        "title": "部署-认识Docker",
+        "note": "notes/python-framework/21-部署-认识Docker.md"
+      },
+      {
+        "no": 22,
+        "title": "部署-云资产",
+        "note": "notes/python-framework/22-部署-云资产.md"
+      },
+      {
+        "no": 23,
+        "title": "部署-k8s",
+        "note": "notes/python-framework/23-部署-k8s.md"
+      },
+      {
+        "no": 24,
+        "title": "部署-CICD",
+        "note": "notes/python-framework/24-部署-CICD.md"
+      },
+      {
+        "no": 25,
+        "title": "部署-总结",
+        "note": "notes/python-framework/25-部署-总结.md"
+      },
+      {
+        "no": 26,
+        "title": "python收官检验",
+        "note": "notes/python-framework/26-python收官检验.md"
+      }
+    ]
+  },
+  {
+    "id": "data-science",
+    "title": "数据科学工具包",
+    "teacher": "袁进",
+    "crumb": "AI大全栈 / Python / 数据科学工具包",
+    "available": true,
+    "chapters": [
+      {
+        "no": 1,
+        "title": "课程导言",
+        "note": "notes/data-science/01-课程导言.md"
+      },
+      {
+        "no": 2,
+        "title": "Jupyter",
+        "note": "notes/data-science/02-Jupyter.md"
+      },
+      {
+        "no": 3,
+        "title": "Numpy - 核心概念",
+        "note": "notes/data-science/03-Numpy - 核心概念.md"
+      },
+      {
+        "no": 4,
+        "title": "Numpy - 数据操作",
+        "note": "notes/data-science/04-Numpy - 数据操作.md"
+      },
+      {
+        "no": 5,
+        "title": "Pandas - 数据类型",
+        "note": "notes/data-science/05-Pandas - 数据类型.md"
+      },
+      {
+        "no": 6,
+        "title": "Pandas - 数据清洗",
+        "note": "notes/data-science/06-Pandas - 数据清洗.md"
+      },
+      {
+        "no": 7,
+        "title": "Matplotlib - 核心概念",
+        "note": "notes/data-science/07-Matplotlib - 核心概念.md"
+      },
+      {
+        "no": 8,
+        "title": "Matplotlib - 动画",
+        "note": "notes/data-science/08-Matplotlib - 动画.md"
+      },
+      {
+        "no": 9,
+        "title": "Matplotlib - 交互式组件",
+        "note": "notes/data-science/09-Matplotlib - 交互式组件.md"
+      },
+      {
+        "no": 10,
+        "title": "Seaborn",
+        "note": "notes/data-science/10-Seaborn.md"
+      }
+    ]
+  },
+  {
+    "id": "agent-core",
+    "title": "Agents底层逻辑",
+    "teacher": "袁进",
+    "crumb": "AI大全栈 / AI / Agents底层逻辑",
+    "available": true,
+    "chapters": [
+      {
+        "no": 1,
+        "title": "必看导言",
+        "note": "notes/agent-core/01-必看导言.md"
+      },
+      {
+        "no": 2,
+        "title": "AI的分类",
+        "note": null
+      },
+      {
+        "no": 3,
+        "title": "神经元",
+        "note": "notes/agent-core/03-神经元.md"
+      },
+      {
+        "no": 4,
+        "title": "前向传播",
+        "note": "notes/agent-core/04-前向传播.md"
+      },
+      {
+        "no": 5,
+        "title": "梯度下降",
+        "note": "notes/agent-core/05-梯度下降.md"
+      },
+      {
+        "no": 6,
+        "title": "训练模式和框架",
+        "note": "notes/agent-core/06-训练模式和框架.md"
+      },
+      {
+        "no": 7,
+        "title": "词元",
+        "note": "notes/agent-core/07-词元.md"
+      },
+      {
+        "no": 8,
+        "title": "token统计",
+        "note": "notes/agent-core/08-token统计.md"
+      },
+      {
+        "no": 9,
+        "title": "神经网络的本质",
+        "note": "notes/agent-core/09-神经网络的本质.md"
+      },
+      {
+        "no": 10,
+        "title": "词嵌入",
+        "note": "notes/agent-core/10-词嵌入.md"
+      },
+      {
+        "no": 11,
+        "title": "注意力机制",
+        "note": "notes/agent-core/11-注意力机制.md"
+      },
+      {
+        "no": 12,
+        "title": "Transformer的完整训练流程",
+        "note": "notes/agent-core/12-Transformer的完整训练流程.md"
+      },
+      {
+        "no": 13,
+        "title": "推理机制",
+        "note": "notes/agent-core/13-推理机制.md"
+      },
+      {
+        "no": 14,
+        "title": "训练阶段",
+        "note": "notes/agent-core/14-训练阶段.md"
+      },
+      {
+        "no": 15,
+        "title": "模型接口契约",
+        "note": "notes/agent-core/15-模型接口契约.md"
+      },
+      {
+        "no": 16,
+        "title": "系统提示词",
+        "note": "notes/agent-core/16-系统提示词.md"
+      },
+      {
+        "no": 17,
+        "title": "会话",
+        "note": "notes/agent-core/17-会话.md"
+      },
+      {
+        "no": 18,
+        "title": "tools",
+        "note": "notes/agent-core/18-tools.md"
+      },
+      {
+        "no": 19,
+        "title": "封装tools",
+        "note": "notes/agent-core/19-封装tools.md"
+      },
+      {
+        "no": 20,
+        "title": "ReAct",
+        "note": "notes/agent-core/20-ReAct.md"
+      },
+      {
+        "no": 21,
+        "title": "Agent",
+        "note": "notes/agent-core/21-Agent.md"
+      },
+      {
+        "no": 22,
+        "title": "Agent 搜索引擎",
+        "note": "notes/agent-core/22-Agent 搜索引擎.md"
+      },
+      {
+        "no": 23,
+        "title": "Skill",
+        "note": "notes/agent-core/23-Skill.md"
+      },
+      {
+        "no": 24,
+        "title": "MCP协议",
+        "note": "notes/agent-core/24-MCP协议.md"
+      },
+      {
+        "no": 25,
+        "title": "MCP Client",
+        "note": "notes/agent-core/25-MCP Client.md"
+      },
+      {
+        "no": 26,
+        "title": "Agent接入MCP",
+        "note": "notes/agent-core/26-Agent接入MCP.md"
+      },
+      {
+        "no": 27,
+        "title": "实现MCP服务器",
+        "note": "notes/agent-core/27-实现MCP服务器.md"
+      },
+      {
+        "no": 28,
+        "title": "Skill VS MCP",
+        "note": "notes/agent-core/28-Skill VS MCP.md"
+      },
+      {
+        "no": 29,
+        "title": "子代理",
+        "note": "notes/agent-core/29-子代理.md"
+      },
+      {
+        "no": 30,
+        "title": "Prompt Engeering",
+        "note": "notes/agent-core/30-Prompt Engeering.md"
+      },
+      {
+        "no": 31,
+        "title": "Context Engeering",
+        "note": "notes/agent-core/31-Context Engeering.md"
+      },
+      {
+        "no": 32,
+        "title": "Harness Engeering",
+        "note": "notes/agent-core/32-Harness Engeering.md"
+      },
+      {
+        "no": 33,
+        "title": "Loop Engeering",
+        "note": "notes/agent-core/33-Loop Engeering.md"
+      },
+      {
+        "no": 34,
+        "title": "Graph Engeering",
+        "note": "notes/agent-core/34-Graph Engeering.md"
+      }
+    ]
+  },
+  {
+    "id": "langgraph",
+    "title": "LangGraph工作流开发",
+    "teacher": "袁进",
+    "crumb": "AI大全栈 / AI / LangGraph工作流开发",
+    "available": true,
+    "chapters": [
+      {
+        "no": 1,
+        "title": "必看导言",
+        "note": "notes/langgraph/01-必看导言.md"
+      },
+      {
+        "no": 2,
+        "title": "langgraph核心概念",
+        "note": "notes/langgraph/02-langgraph核心概念.md"
+      },
+      {
+        "no": 3,
+        "title": "环境搭建",
+        "note": "notes/langgraph/03-环境搭建.md"
+      },
+      {
+        "no": 4,
+        "title": "模型",
+        "note": "notes/langgraph/04-模型.md"
+      },
+      {
+        "no": 5,
+        "title": "消息",
+        "note": "notes/langgraph/05-消息.md"
+      },
+      {
+        "no": 6,
+        "title": "Reducer",
+        "note": "notes/langgraph/06-Reducer.md"
+      },
+      {
+        "no": 7,
+        "title": "Agent Server",
+        "note": "notes/langgraph/07-Agent Server.md"
+      },
+      {
+        "no": 8,
+        "title": "超步",
+        "note": "notes/langgraph/08-超步.md"
+      },
+      {
+        "no": 9,
+        "title": "线程和检查点",
+        "note": "notes/langgraph/09-线程和检查点.md"
+      },
+      {
+        "no": 10,
+        "title": "工具节点",
+        "note": "notes/langgraph/10-工具节点.md"
+      },
+      {
+        "no": 11,
+        "title": "Mock Model",
+        "note": "notes/langgraph/11-Mock Model.md"
+      },
+      {
+        "no": 12,
+        "title": "部署模式和学习重心",
+        "note": "notes/langgraph/12-部署模式和学习重心.md"
+      },
+      {
+        "no": 13,
+        "title": "断点调试",
+        "note": null
+      },
+      {
+        "no": 14,
+        "title": "模型配置的动态切换",
+        "note": "notes/langgraph/14-模型配置的动态切换.md"
+      },
+      {
+        "no": 15,
+        "title": "RunnableConfig",
+        "note": "notes/langgraph/15-RunnableConfig.md"
+      },
+      {
+        "no": 16,
+        "title": "Runtime",
+        "note": "notes/langgraph/16-Runtime.md"
+      },
+      {
+        "no": 17,
+        "title": "Assistant API",
+        "note": "notes/langgraph/17-Assistant API.md"
+      },
+      {
+        "no": 18,
+        "title": "子图",
+        "note": "notes/langgraph/18-子图.md"
+      },
+      {
+        "no": 19,
+        "title": "Thread API",
+        "note": "notes/langgraph/19-Thread API.md"
+      },
+      {
+        "no": 20,
+        "title": "Run API",
+        "note": "notes/langgraph/20-Run API.md"
+      },
+      {
+        "no": 21,
+        "title": "Cron API",
+        "note": "notes/langgraph/21-Cron API.md"
+      },
+      {
+        "no": 22,
+        "title": "System API",
+        "note": "notes/langgraph/22-System API.md"
+      },
+      {
+        "no": 23,
+        "title": "MCP API",
+        "note": "notes/langgraph/23-MCP API.md"
+      },
+      {
+        "no": 24,
+        "title": "时间旅行",
+        "note": "notes/langgraph/24-时间旅行.md"
+      },
+      {
+        "no": 25,
+        "title": "手动错误重试",
+        "note": "notes/langgraph/25-手动错误重试.md"
+      },
+      {
+        "no": 26,
+        "title": "容错机制",
+        "note": "notes/langgraph/26-容错机制.md"
+      },
+      {
+        "no": 27,
+        "title": "Command",
+        "note": "notes/langgraph/27-Command.md"
+      },
+      {
+        "no": 28,
+        "title": "中断",
+        "note": "notes/langgraph/28-中断.md"
+      },
+      {
+        "no": 29,
+        "title": "人在回路",
+        "note": "notes/langgraph/29-人在回路.md"
+      },
+      {
+        "no": 30,
+        "title": "动态扇出",
+        "note": "notes/langgraph/30-动态扇出.md"
+      },
+      {
+        "no": 31,
+        "title": "运行取消",
+        "note": "notes/langgraph/31-运行取消.md"
+      },
+      {
+        "no": 32,
+        "title": "多任务策略",
+        "note": "notes/langgraph/32-多任务策略.md"
+      },
+      {
+        "no": 33,
+        "title": "事件流",
+        "note": "notes/langgraph/33-事件流.md"
+      },
+      {
+        "no": 34,
+        "title": "Store",
+        "note": "notes/langgraph/34-Store.md"
+      },
+      {
+        "no": 35,
+        "title": "长期记忆",
+        "note": "notes/langgraph/35-长期记忆.md"
+      },
+      {
+        "no": 36,
+        "title": "A2A协议",
+        "note": "notes/langgraph/36-A2A协议.md"
+      },
+      {
+        "no": 37,
+        "title": "部署",
+        "note": "notes/langgraph/37-部署.md"
+      },
+      {
+        "no": 38,
+        "title": "课程总结",
+        "note": "notes/langgraph/38-课程总结.md"
+      }
+    ]
+  },
+  {
+    "id": "ai-comic",
+    "title": "项目: LangGraph实现AI漫剧",
+    "teacher": "谢杰",
+    "crumb": "AI大全栈 / AI / 项目: LangGraph实现AI漫剧",
+    "available": false,
+    "chapters": [
+      {
+        "no": 1,
+        "title": "课程导读",
+        "note": null
+      },
+      {
+        "no": 2,
+        "title": "项目设计",
+        "note": null
+      },
+      {
+        "no": 3,
+        "title": "搭建项目",
+        "note": null
+      },
+      {
+        "no": 4,
+        "title": "需求结构化part1",
+        "note": null
+      },
+      {
+        "no": 5,
+        "title": "需求结构化part2",
+        "note": null
+      },
+      {
+        "no": 6,
+        "title": "故事大纲与设定",
+        "note": null
+      },
+      {
+        "no": 7,
+        "title": "生成结构化分镜part1",
+        "note": null
+      },
+      {
+        "no": 8,
+        "title": "生成结构化分镜part2",
+        "note": null
+      },
+      {
+        "no": 9,
+        "title": "重构为子图",
+        "note": null
+      },
+      {
+        "no": 10,
+        "title": "模型评审分镜part1",
+        "note": null
+      },
+      {
+        "no": 11,
+        "title": "模型评审分镜part2",
+        "note": null
+      },
+      {
+        "no": 12,
+        "title": "模型评审分镜part3",
+        "note": null
+      },
+      {
+        "no": 13,
+        "title": "修订不合格分镜part1",
+        "note": null
+      },
+      {
+        "no": 14,
+        "title": "修订不合格分镜part2",
+        "note": null
+      },
+      {
+        "no": 15,
+        "title": "修订不合格分镜part3",
+        "note": null
+      },
+      {
+        "no": 16,
+        "title": "修订不合格分镜part4",
+        "note": null
+      },
+      {
+        "no": 17,
+        "title": "修订不合格分镜part5",
+        "note": null
+      },
+      {
+        "no": 18,
+        "title": "修订不合格分镜part6",
+        "note": null
+      }
+    ]
+  },
+  {
+    "id": "langchain-deepagent",
+    "title": "LangChain + DeepAgent 开发实战",
+    "teacher": "袁进",
+    "crumb": "AI大全栈 / AI / LangChain + DeepAgent 开发实战",
+    "available": true,
+    "chapters": [
+      {
+        "no": 1,
+        "title": "必看导言",
+        "note": "notes/langchain-deepagent/01-必看导言.md"
+      },
+      {
+        "no": 2,
+        "title": "认识 Agent",
+        "note": "notes/langchain-deepagent/02-认识 Agent.md"
+      },
+      {
+        "no": 3,
+        "title": "结构化输出",
+        "note": "notes/langchain-deepagent/03-结构化输出.md"
+      },
+      {
+        "no": 4,
+        "title": "中间件",
+        "note": "notes/langchain-deepagent/04-中间件.md"
+      },
+      {
+        "no": 5,
+        "title": "动态提示词",
+        "note": "notes/langchain-deepagent/05-动态提示词.md"
+      },
+      {
+        "no": 6,
+        "title": "动态模型",
+        "note": "notes/langchain-deepagent/06-动态模型.md"
+      },
+      {
+        "no": 7,
+        "title": "预置中间件",
+        "note": "notes/langchain-deepagent/07-预置中间件.md"
+      },
+      {
+        "no": 8,
+        "title": "PII",
+        "note": "notes/langchain-deepagent/08-PII.md"
+      },
+      {
+        "no": 9,
+        "title": "阶段总结",
+        "note": "notes/langchain-deepagent/09-阶段总结.md"
+      },
+      {
+        "no": 10,
+        "title": "认识 deepagent",
+        "note": "notes/langchain-deepagent/10-认识 deepagent.md"
+      },
+      {
+        "no": 11,
+        "title": "tool的中断与补全",
+        "note": "notes/langchain-deepagent/11-tool的中断与补全.md"
+      },
+      {
+        "no": 12,
+        "title": "文件系统工具",
+        "note": "notes/langchain-deepagent/12-文件系统工具.md"
+      },
+      {
+        "no": 13,
+        "title": "沙箱",
+        "note": "notes/langchain-deepagent/13-沙箱.md"
+      },
+      {
+        "no": 14,
+        "title": "E2B",
+        "note": "notes/langchain-deepagent/14-E2B.md"
+      },
+      {
+        "no": 15,
+        "title": "沙箱隔离方案",
+        "note": "notes/langchain-deepagent/15-沙箱隔离方案.md"
+      },
+      {
+        "no": 16,
+        "title": "实现服务端CodingAgent",
+        "note": "notes/langchain-deepagent/16-实现服务端CodingAgent.md"
+      },
+      {
+        "no": 17,
+        "title": "HITL中间件",
+        "note": "notes/langchain-deepagent/17-HITL中间件.md"
+      },
+      {
+        "no": 18,
+        "title": "文件操作权限",
+        "note": "notes/langchain-deepagent/18-文件操作权限.md"
+      },
+      {
+        "no": 19,
+        "title": "后端路由",
+        "note": "notes/langchain-deepagent/19-后端路由.md"
+      },
+      {
+        "no": 20,
+        "title": "多模态消息",
+        "note": "notes/langchain-deepagent/20-多模态消息.md"
+      },
+      {
+        "no": 21,
+        "title": "skill中间件",
+        "note": "notes/langchain-deepagent/21-skill中间件.md"
+      },
+      {
+        "no": 22,
+        "title": "MCP工具注入",
+        "note": "notes/langchain-deepagent/22-MCP工具注入.md"
+      },
+      {
+        "no": 23,
+        "title": "Memory中间件",
+        "note": "notes/langchain-deepagent/23-Memory中间件.md"
+      },
+      {
+        "no": 24,
+        "title": "上下文压缩",
+        "note": "notes/langchain-deepagent/24-上下文压缩.md"
+      },
+      {
+        "no": 25,
+        "title": "先计划再行动",
+        "note": "notes/langchain-deepagent/25-先计划再行动.md"
+      },
+      {
+        "no": 26,
+        "title": "验收和评审",
+        "note": "notes/langchain-deepagent/26-验收和评审.md"
+      },
+      {
+        "no": 27,
+        "title": "解释器",
+        "note": "notes/langchain-deepagent/27-解释器.md"
+      },
+      {
+        "no": 28,
+        "title": "多智能体",
+        "note": "notes/langchain-deepagent/28-多智能体.md"
+      },
+      {
+        "no": 29,
+        "title": "SubAgent模式",
+        "note": "notes/langchain-deepagent/29-SubAgent模式.md"
+      },
+      {
+        "no": 30,
+        "title": "异步子代理",
+        "note": "notes/langchain-deepagent/30-异步子代理.md"
+      },
+      {
+        "no": 31,
+        "title": "handoff模式",
+        "note": "notes/langchain-deepagent/31-handoff模式.md"
+      },
+      {
+        "no": 32,
+        "title": "路由模式",
+        "note": "notes/langchain-deepagent/32-路由模式.md"
+      },
+      {
+        "no": 33,
+        "title": "课程总结",
+        "note": "notes/langchain-deepagent/33-课程总结.md"
+      },
+      {
+        "no": 34,
+        "title": "[补充]身份认证",
+        "note": "notes/langchain-deepagent/34-[补充]身份认证.md"
+      },
+      {
+        "no": 35,
+        "title": "[补充]授权",
+        "note": "notes/langchain-deepagent/35-[补充]授权.md"
+      },
+      {
+        "no": 36,
+        "title": "[补充]资源隔离",
+        "note": "notes/langchain-deepagent/36-[补充]资源隔离.md"
+      }
+    ]
+  },
+  {
+    "id": "ai-eval",
+    "title": "Agent观测与评估",
+    "teacher": "袁进",
+    "crumb": "AI大全栈 / AI / Agent观测与评估",
+    "available": true,
+    "chapters": [
+      {
+        "no": 1,
+        "title": "必看导言",
+        "note": "notes/ai-eval/01-必看导言.md"
+      },
+      {
+        "no": 2,
+        "title": "安装langfuse",
+        "note": "notes/ai-eval/02-安装langfuse.md"
+      },
+      {
+        "no": 3,
+        "title": "数据上报",
+        "note": "notes/ai-eval/03-数据上报.md"
+      },
+      {
+        "no": 4,
+        "title": "Observation",
+        "note": "notes/ai-eval/04-Observation.md"
+      },
+      {
+        "no": 5,
+        "title": "提示词管理",
+        "note": "notes/ai-eval/05-提示词管理.md"
+      },
+      {
+        "no": 6,
+        "title": "演练场",
+        "note": "notes/ai-eval/06-演练场.md"
+      },
+      {
+        "no": 7,
+        "title": "人工评估",
+        "note": "notes/ai-eval/07-人工评估.md"
+      },
+      {
+        "no": 8,
+        "title": "自动化评估器",
+        "note": "notes/ai-eval/08-自动化评估器.md"
+      },
+      {
+        "no": 9,
+        "title": "评估器优化",
+        "note": "notes/ai-eval/09-评估器优化.md"
+      },
+      {
+        "no": 10,
+        "title": "数据集",
+        "note": "notes/ai-eval/10-数据集.md"
+      },
+      {
+        "no": 11,
+        "title": "补充知识",
+        "note": "notes/ai-eval/11-补充知识.md"
+      },
+      {
+        "no": 12,
+        "title": "实验",
+        "note": "notes/ai-eval/12-实验.md"
+      },
+      {
+        "no": 13,
+        "title": "Agent回归测试",
+        "note": "notes/ai-eval/13-Agent回归测试.md"
+      },
+      {
+        "no": 14,
+        "title": "使用UI完成离线评估",
+        "note": "notes/ai-eval/14-使用UI完成离线评估.md"
+      },
+      {
+        "no": 15,
+        "title": "使用SDK完成离线评估",
+        "note": "notes/ai-eval/15-使用SDK完成离线评估.md"
+      },
+      {
+        "no": 16,
+        "title": "离线评估接入Pytest",
+        "note": "notes/ai-eval/16-离线评估接入Pytest.md"
+      },
+      {
+        "no": 17,
+        "title": "线上实验入口",
+        "note": "notes/ai-eval/17-线上实验入口.md"
+      },
+      {
+        "no": 18,
+        "title": "告警",
+        "note": "notes/ai-eval/18-告警.md"
+      },
+      {
+        "no": 19,
+        "title": "清理旧数据",
+        "note": "notes/ai-eval/19-清理旧数据.md"
+      },
+      {
+        "no": 20,
+        "title": "dashboard",
+        "note": "notes/ai-eval/20-dashboard.md"
+      },
+      {
+        "no": 21,
+        "title": "课程总结",
+        "note": "notes/ai-eval/21-课程总结.md"
+      }
+    ]
+  },
+  {
+    "id": "ai-infra",
+    "title": "项目: Agent基础设施建设",
+    "teacher": "袁进",
+    "crumb": "AI大全栈 / AI / 项目: Agent基础设施建设",
+    "available": true,
+    "chapters": [
+      {
+        "no": 1,
+        "title": "必看导言",
+        "note": "notes/ai-infra/01-必看导言.md"
+      },
+      {
+        "no": 2,
+        "title": "认识docker-compose",
+        "note": "notes/ai-infra/02-认识docker-compose.md"
+      },
+      {
+        "no": 3,
+        "title": "恢复langfuse服务",
+        "note": "notes/ai-infra/03-恢复langfuse服务.md"
+      },
+      {
+        "no": 4,
+        "title": "AI网关服务选型",
+        "note": "notes/ai-infra/04-AI网关服务选型.md"
+      },
+      {
+        "no": 5,
+        "title": "兼容性问题的最佳实践",
+        "note": "notes/ai-infra/05-兼容性问题的最佳实践.md"
+      },
+      {
+        "no": 6,
+        "title": "网关访问链路",
+        "note": "notes/ai-infra/06-网关访问链路.md"
+      },
+      {
+        "no": 7,
+        "title": "会话粘黏",
+        "note": "notes/ai-infra/07-会话粘黏.md"
+      },
+      {
+        "no": 8,
+        "title": "路由策略",
+        "note": "notes/ai-infra/08-路由策略.md"
+      },
+      {
+        "no": 9,
+        "title": "熔断",
+        "note": "notes/ai-infra/09-熔断.md"
+      },
+      {
+        "no": 10,
+        "title": "回退机制",
+        "note": "notes/ai-infra/10-回退机制.md"
+      },
+      {
+        "no": 11,
+        "title": "并发控制",
+        "note": "notes/ai-infra/11-并发控制.md"
+      },
+      {
+        "no": 12,
+        "title": "Logging Callback",
+        "note": "notes/ai-infra/12-Logging Callback.md"
+      },
+      {
+        "no": 13,
+        "title": "AI资产注册与治理",
+        "note": "notes/ai-infra/13-AI资产注册与治理.md"
+      },
+      {
+        "no": 14,
+        "title": "AgentSpec",
+        "note": "notes/ai-infra/14-AgentSpec.md"
+      },
+      {
+        "no": 15,
+        "title": "Nacos API 接口",
+        "note": "notes/ai-infra/15-Nacos API 接口.md"
+      },
+      {
+        "no": 16,
+        "title": "集成AgentSpec",
+        "note": "notes/ai-infra/16-集成AgentSpec.md"
+      },
+      {
+        "no": 17,
+        "title": "Agent动态配置",
+        "note": "notes/ai-infra/17-Agent动态配置.md"
+      },
+      {
+        "no": 18,
+        "title": "开源沙箱方案",
+        "note": "notes/ai-infra/18-开源沙箱方案.md"
+      },
+      {
+        "no": 19,
+        "title": "自定义沙箱镜像",
+        "note": "notes/ai-infra/19-自定义沙箱镜像.md"
+      },
+      {
+        "no": 20,
+        "title": "Nacos自定义配置",
+        "note": "notes/ai-infra/20-Nacos自定义配置.md"
+      },
+      {
+        "no": 21,
+        "title": "创建和复用沙箱",
+        "note": "notes/ai-infra/21-创建和复用沙箱.md"
+      },
+      {
+        "no": 22,
+        "title": "实现沙箱后端",
+        "note": "notes/ai-infra/22-实现沙箱后端.md"
+      },
+      {
+        "no": 23,
+        "title": "Agent接入沙箱后端",
+        "note": "notes/ai-infra/23-Agent接入沙箱后端.md"
+      },
+      {
+        "no": 24,
+        "title": "搭建MinIO环境",
+        "note": "notes/ai-infra/24-搭建MinIO环境.md"
+      },
+      {
+        "no": 25,
+        "title": "实现minio管理",
+        "note": "notes/ai-infra/25-实现minio管理.md"
+      },
+      {
+        "no": 26,
+        "title": "沙箱直传MinIO",
+        "note": "notes/ai-infra/26-沙箱直传MinIO.md"
+      },
+      {
+        "no": 27,
+        "title": "沙箱产物自动部署",
+        "note": "notes/ai-infra/27-沙箱产物自动部署.md"
+      },
+      {
+        "no": 28,
+        "title": "沙箱共享卷",
+        "note": "notes/ai-infra/28-沙箱共享卷.md"
+      },
+      {
+        "no": 29,
+        "title": "连接技能到Agent",
+        "note": "notes/ai-infra/29-连接技能到Agent.md"
+      },
+      {
+        "no": 30,
+        "title": "课程总结",
+        "note": "notes/ai-infra/30-课程总结.md"
+      }
+    ]
+  },
+  {
+    "id": "feishu-rag",
+    "title": "项目：飞书知识库RAG系统实战",
+    "teacher": "袁进",
+    "crumb": "AI大全栈 / AI / 项目：飞书知识库RAG系统实战",
+    "available": true,
+    "chapters": [
+      {
+        "no": 1,
+        "title": "课程导言",
+        "note": "notes/feishu-rag/01-课程导言.md"
+      },
+      {
+        "no": 2,
+        "title": "RAG系统概览",
+        "note": "notes/feishu-rag/02-RAG系统概览.md"
+      },
+      {
+        "no": 3,
+        "title": "RAG完整流程",
+        "note": "notes/feishu-rag/03-RAG完整流程.md"
+      },
+      {
+        "no": 4,
+        "title": "索引流水线",
+        "note": "notes/feishu-rag/04-索引流水线.md"
+      },
+      {
+        "no": 5,
+        "title": "飞书开放平台",
+        "note": "notes/feishu-rag/05-飞书开放平台.md"
+      },
+      {
+        "no": 6,
+        "title": "数据归一化",
+        "note": "notes/feishu-rag/06-数据归一化.md"
+      },
+      {
+        "no": 7,
+        "title": "构建飞书文档树",
+        "note": "notes/feishu-rag/07-构建飞书文档树.md"
+      },
+      {
+        "no": 8,
+        "title": "文档图片的处理",
+        "note": "notes/feishu-rag/08-文档图片的处理.md"
+      },
+      {
+        "no": 9,
+        "title": "OCR提取文字",
+        "note": "notes/feishu-rag/09-OCR提取文字.md"
+      },
+      {
+        "no": 10,
+        "title": "使用视觉模型提取图片信息",
+        "note": "notes/feishu-rag/10-使用视觉模型提取图片信息.md"
+      },
+      {
+        "no": 11,
+        "title": "文档结构化切片",
+        "note": "notes/feishu-rag/11-文档结构化切片.md"
+      },
+      {
+        "no": 12,
+        "title": "精细化切片",
+        "note": "notes/feishu-rag/12-精细化切片.md"
+      },
+      {
+        "no": 13,
+        "title": "Document Loader",
+        "note": "notes/feishu-rag/13-Document Loader.md"
+      },
+      {
+        "no": 14,
+        "title": "langchain切片工具",
+        "note": "notes/feishu-rag/14-langchain切片工具.md"
+      },
+      {
+        "no": 15,
+        "title": "Embedding模型选型",
+        "note": "notes/feishu-rag/15-Embedding模型选型.md"
+      },
+      {
+        "no": 16,
+        "title": "创建Embedding模型",
+        "note": "notes/feishu-rag/16-创建Embedding模型.md"
+      },
+      {
+        "no": 17,
+        "title": "Milvus环境搭建",
+        "note": "notes/feishu-rag/17-Milvus环境搭建.md"
+      },
+      {
+        "no": 18,
+        "title": "Milvus DDL",
+        "note": "notes/feishu-rag/18-Milvus DDL.md"
+      },
+      {
+        "no": 19,
+        "title": "Milvus DML",
+        "note": "notes/feishu-rag/19-Milvus DML.md"
+      },
+      {
+        "no": 20,
+        "title": "Milvus DQL",
+        "note": "notes/feishu-rag/20-Milvus DQL.md"
+      },
+      {
+        "no": 21,
+        "title": "Attu使用技巧",
+        "note": "notes/feishu-rag/21-Attu使用技巧.md"
+      },
+      {
+        "no": 22,
+        "title": "分析器",
+        "note": "notes/feishu-rag/22-分析器.md"
+      },
+      {
+        "no": 23,
+        "title": "全文检索",
+        "note": "notes/feishu-rag/23-全文检索.md"
+      },
+      {
+        "no": 24,
+        "title": "创建飞书文档数据集",
+        "note": "notes/feishu-rag/24-创建飞书文档数据集.md"
+      },
+      {
+        "no": 25,
+        "title": "VectorStore",
+        "note": "notes/feishu-rag/25-VectorStore.md"
+      },
+      {
+        "no": 26,
+        "title": "加入业务测试数据",
+        "note": "notes/feishu-rag/26-加入业务测试数据.md"
+      },
+      {
+        "no": 27,
+        "title": "调试技巧",
+        "note": "notes/feishu-rag/27-调试技巧.md"
+      },
+      {
+        "no": 28,
+        "title": "多源数据接入",
+        "note": "notes/feishu-rag/28-多源数据接入.md"
+      },
+      {
+        "no": 29,
+        "title": "检索策略优化",
+        "note": "notes/feishu-rag/29-检索策略优化.md"
+      },
+      {
+        "no": 30,
+        "title": "混合检索",
+        "note": "notes/feishu-rag/30-混合检索.md"
+      },
+      {
+        "no": 31,
+        "title": "Rerank重排序",
+        "note": null
+      },
+      {
+        "no": 32,
+        "title": "GraphRAG图谱增强",
+        "note": null
+      },
+      {
+        "no": 33,
+        "title": "Multi-modal RAG",
+        "note": null
+      },
+      {
+        "no": 34,
+        "title": "语义路由",
+        "note": null
+      },
+      {
+        "no": 35,
+        "title": "缓存策略",
+        "note": null
+      },
+      {
+        "no": 36,
+        "title": "RAG质量评估体系",
+        "note": null
+      },
+      {
+        "no": 37,
+        "title": "FastAPI服务封装",
+        "note": null
+      },
+      {
+        "no": 38,
+        "title": "生产环境部署",
+        "note": null
+      }
+    ]
+  },
+  {
+    "id": "fde-business",
+    "title": "FDE项目：商机智航-企业数据资产价值重塑",
+    "teacher": "待定",
+    "crumb": "AI大全栈 / 待定 / FDE项目",
+    "available": false,
+    "chapters": [
+      {
+        "no": 1,
+        "title": "待定",
+        "note": null
+      }
+    ]
+  },
+  {
+    "id": "dify",
+    "title": "Dify平台实战应用",
+    "teacher": "待定",
+    "crumb": "AI大全栈 / 待定 / Dify平台实战应用",
+    "available": false,
+    "chapters": [
+      {
+        "no": 1,
+        "title": "Dify私有化部署",
+        "note": null
+      },
+      {
+        "no": 2,
+        "title": "Dify节点",
+        "note": null
+      },
+      {
+        "no": 3,
+        "title": "工作流设计模式",
+        "note": null
+      },
+      {
+        "no": 4,
+        "title": "对话变量管理",
+        "note": null
+      },
+      {
+        "no": 5,
+        "title": "知识库集成",
+        "note": null
+      },
+      {
+        "no": 6,
+        "title": "API与Webhook调用",
+        "note": null
+      },
+      {
+        "no": 7,
+        "title": "多模型编排",
+        "note": null
+      },
+      {
+        "no": 8,
+        "title": "Dify插件开发",
+        "note": null
+      },
+      {
+        "no": 9,
+        "title": "Dify调试",
+        "note": null
+      },
+      {
+        "no": 10,
+        "title": "权限与团队协作",
+        "note": null
+      },
+      {
+        "no": 11,
+        "title": "监控与日志",
+        "note": null
+      },
+      {
+        "no": 12,
+        "title": "工作流模板",
+        "note": null
+      },
+      {
+        "no": 13,
+        "title": "应用发布与多端部署",
+        "note": null
+      }
+    ]
+  },
+  {
+    "id": "fine-tuning",
+    "title": "大模型微调实战",
+    "teacher": "待定",
+    "crumb": "AI大全栈 / 待定 / 大模型微调实战",
+    "available": false,
+    "chapters": [
+      {
+        "no": 1,
+        "title": "基座模型选型",
+        "note": null
+      },
+      {
+        "no": 2,
+        "title": "数据收集与清洗",
+        "note": null
+      },
+      {
+        "no": 3,
+        "title": "数据集构建实战",
+        "note": null
+      },
+      {
+        "no": 4,
+        "title": "合成数据生成",
+        "note": null
+      },
+      {
+        "no": 5,
+        "title": "Hugging Face",
+        "note": null
+      },
+      {
+        "no": 6,
+        "title": "unsloth",
+        "note": null
+      },
+      {
+        "no": 7,
+        "title": "全量微调",
+        "note": null
+      },
+      {
+        "no": 8,
+        "title": "PEFT方案",
+        "note": null
+      },
+      {
+        "no": 9,
+        "title": "LoRA",
+        "note": null
+      },
+      {
+        "no": 10,
+        "title": "QLoRA",
+        "note": null
+      },
+      {
+        "no": 11,
+        "title": "模型量化部署",
+        "note": null
+      },
+      {
+        "no": 12,
+        "title": "RLHF/DPO对齐",
+        "note": null
+      },
+      {
+        "no": 13,
+        "title": "分布式训练基础",
+        "note": null
+      },
+      {
+        "no": 14,
+        "title": "微调成本优化",
+        "note": null
+      },
+      {
+        "no": 15,
+        "title": "模型合并与导出",
+        "note": null
+      },
+      {
+        "no": 16,
+        "title": "微调结果评估",
+        "note": null
+      },
+      {
+        "no": 17,
+        "title": "自动评估指标",
+        "note": null
+      },
+      {
+        "no": 18,
+        "title": "lm-evaluation-harness",
+        "note": null
+      },
+      {
+        "no": 19,
+        "title": "LLM-as-Judge",
+        "note": null
+      },
+      {
+        "no": 20,
+        "title": "领域微调案例分析",
+        "note": null
+      }
+    ]
+  },
+  {
+    "id": "oauth2",
+    "title": "OAuth2",
+    "teacher": "郑天民",
+    "crumb": "AI大全栈 / 通识 / OAuth2",
+    "available": false,
+    "chapters": [
+      {
+        "no": 1,
+        "title": "OAuth2是什么：问题与需求",
+        "note": null
+      },
+      {
+        "no": 2,
+        "title": "OAuth2怎么工作：核心概念和角色",
+        "note": null
+      },
+      {
+        "no": 3,
+        "title": "OAuth2的授权模式与选型",
+        "note": null
+      },
+      {
+        "no": 4,
+        "title": "授权码模式：流程、参数与设计",
+        "note": null
+      },
+      {
+        "no": 5,
+        "title": "授权码模式+PKCE：移动端安全增强",
+        "note": null
+      },
+      {
+        "no": 6,
+        "title": "OIDC：在OAuth2上加一层身份认证",
+        "note": null
+      },
+      {
+        "no": 7,
+        "title": "令牌的生命周期管理和最佳实践",
+        "note": null
+      },
+      {
+        "no": 8,
+        "title": "OAuth2收官实战",
+        "note": null
+      }
+    ]
+  },
+  {
+    "id": "rbac",
+    "title": "RBAC权限模型",
+    "teacher": "郑天民",
+    "crumb": "AI大全栈 / 通识 / RBAC",
+    "available": false,
+    "chapters": [
+      {
+        "no": 1,
+        "title": "权限控制的需求和实现模型",
+        "note": null
+      },
+      {
+        "no": 2,
+        "title": "RBAC核心模型：用户、角色和权限",
+        "note": null
+      },
+      {
+        "no": 3,
+        "title": "RBAC数据库设计",
+        "note": null
+      },
+      {
+        "no": 4,
+        "title": "RBAC API接口层设计",
+        "note": null
+      },
+      {
+        "no": 5,
+        "title": "RBAC收官实战",
+        "note": null
+      }
+    ]
+  },
+  {
+    "id": "ai-coding",
+    "title": "AI Coding",
+    "teacher": "待定",
+    "crumb": "AI大全栈 / 待定 / AI Coding",
+    "available": false,
+    "chapters": [
+      {
+        "no": 1,
+        "title": "Raw Model",
+        "note": null
+      },
+      {
+        "no": 2,
+        "title": "Model Service",
+        "note": null
+      },
+      {
+        "no": 3,
+        "title": "玩转大模型的核心思路",
+        "note": null
+      },
+      {
+        "no": 4,
+        "title": "AI编程核心关注点",
+        "note": null
+      },
+      {
+        "no": 5,
+        "title": "Claude Code环境搭建",
+        "note": null
+      },
+      {
+        "no": 6,
+        "title": "tools",
+        "note": null
+      },
+      {
+        "no": 7,
+        "title": "会话",
+        "note": null
+      },
+      {
+        "no": 8,
+        "title": "提示词",
+        "note": null
+      },
+      {
+        "no": 9,
+        "title": "深度思考",
+        "note": null
+      },
+      {
+        "no": 10,
+        "title": "MCP",
+        "note": null
+      },
+      {
+        "no": 11,
+        "title": "SKILL",
+        "note": null
+      },
+      {
+        "no": 12,
+        "title": "CLI",
+        "note": null
+      },
+      {
+        "no": 13,
+        "title": "Sub Agent",
+        "note": null
+      },
+      {
+        "no": 14,
+        "title": "长期记忆",
+        "note": null
+      },
+      {
+        "no": 15,
+        "title": "Vibe Coding",
+        "note": null
+      },
+      {
+        "no": 16,
+        "title": "Spec Coding",
+        "note": null
+      },
+      {
+        "no": 17,
+        "title": "实战-工程骨架",
+        "note": null
+      },
+      {
+        "no": 18,
+        "title": "实战-API文档沉淀",
+        "note": null
+      },
+      {
+        "no": 19,
+        "title": "实战-多分支同步开发",
+        "note": null
+      },
+      {
+        "no": 20,
+        "title": "实战-服务端e2e测试",
+        "note": null
+      },
+      {
+        "no": 21,
+        "title": "实战-前端自动化测试",
+        "note": null
+      },
+      {
+        "no": 22,
+        "title": "实战-会话功能服务端实现",
+        "note": null
+      },
+      {
+        "no": 23,
+        "title": "实战-会话功能前端实现",
+        "note": null
+      }
+    ]
+  }
+]

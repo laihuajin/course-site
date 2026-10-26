@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>《Agent 应用开发》- 课程笔记</title>
+<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/highlight-theme.css">
+<script src="assets/marked.min.js"></script>
+<script src="assets/highlight.min.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner" id="headerInner">
+    <div class="header-left">
+      <span class="header-tag">COURSE TOC</span>
+      <h1 class="header-title">Agent 应用开发</h1>
+      <span class="header-count" id="courseCount">共 0 门课程</span>
+    </div>
+    <div class="header-mobile">
+      <button class="btn-back" id="btnBack">← 返回目录</button>
+      <h1>Agent 应用开发</h1>
+      <span class="header-count" id="courseCountM">共 0 门课程</span>
+    </div>
+  </div>
+</header>
+
+<div class="page">
+  <!-- 目录页 -->
+  <div class="layout" id="tocView">
+    <aside class="sidebar">
+      <div class="sidebar-inner" id="sideList"></div>
+    </aside>
+    <section class="main"><div class="space" id="courseList"></div></section>
+  </div>
+
+  <!-- 课件阅读页 -->
+  <div class="reader" id="readerView" style="display:none">
+    <div class="reader-card">
+      <p class="reader-crumb" id="readerCrumb"></p>
+      <h2 class="reader-title" id="readerTitle"></h2>
+      <div class="md" id="readerBody"><p class="loading">加载中...</p></div>
+      <div class="reader-nav" id="readerNav"></div>
+    </div>
+  </div>
+</div>
+
+<!-- 移动端课程导航 -->
+<button class="fab" id="fab">课程导航</button>
+<div class="drawer-mask" id="drawerMask">
+  <aside class="drawer">
+    <div class="drawer-head">
+      <h2>课程目录</h2>
+      <button class="drawer-close" id="drawerClose">关闭</button>
+    </div>
+    <div id="drawerList"></div>
+  </aside>
+</div>
+
+<script>
+let COURSES = [];
+
+/* ---------- 路由 ---------- */
+function parseHash() {
+  const m = location.hash.match(/^#\/course\/([^/]+)(?:\/(\d+))?/);
+  return m ? { course: m[1], no: m[2] ? +m[2] : null } : null;
+}
+function go(courseId, no) {
+  location.hash = no == null ? `#/course/${courseId}` : `#/course/${courseId}/${no}`;
+}
+window.addEventListener('hashchange', render);
+
+/* ---------- 工具 ---------- */
+const $ = id => document.getElementById(id);
+function esc(s) { return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;'); }
+
+/* ---------- 渲染: 课程列表项(侧边栏/抽屉共用) ---------- */
+function courseBtnHTML(c, active) {
+  return `<button type="button" class="course-btn ${active ? 'active' : ''}" data-id="${c.id}">
+    <p class="t" style="truncate">${esc(c.title)}</p>
+    <p class="s">${esc(c.teacher)}</p></button>`;
+}
+
+function bindCourseClicks(root) {
+  root.querySelectorAll('.course-btn').forEach(b =>
+    b.addEventListener('click', () => {
+      closeDrawer();
+      const c = COURSES.find(x => x.id === b.dataset.id);
+      if (!c) return;
+      if (parseHash()) go(c.id);           // 阅读页 → 回目录
+      else { go(c.id); scrollToCourse(c.id); }
+    }));
+}
+
+function scrollToCourse(id) {
+  requestAnimationFrame(() => {
+    const el = document.getElementById('course-' + id);
+    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+}
+
+/* ---------- 抽屉 ---------- */
+function openDrawer() { $('drawerMask').classList.add('open'); }
+function closeDrawer() { $('drawerMask').classList.remove('open'); }
+
+/* ---------- 目录页 ---------- */
+function renderTOC() {
+  $('tocView').style.display = '';
+  $('readerView').style.display = 'none';
+  $('headerInner').classList.remove('has-back');
+  $('fab').style.display = '';
+  document.title = '《Agent 应用开发》- 课程笔记';
+
+  $('sideList').innerHTML = COURSES.map(c => courseBtnHTML(c, false)).join('');
+  $('drawerList').innerHTML = COURSES.map(c => courseBtnHTML(c, false)).join('');
+  bindCourseClicks($('sideList'));
+  bindCourseClicks($('drawerList'));
+
+  $('courseList').innerHTML = COURSES.map(c => `
+    <article class="course-card" id="course-${c.id}">
+      <div class="card-head">
+        <h2 class="card-title">${esc(c.title)}</h2>
+        <span class="card-teacher">${esc(c.teacher)}</span>
+      </div>
+      <div class="card-meta"><span>${esc(c.crumb)}</span></div>
+      <ol class="chapters">
+        ${c.chapters.map(ch => ch.note
+          ? `<li><a href="#/course/${c.id}/${ch.no}"><span class="no">${ch.no}.</span>${esc(ch.title)}</a></li>`
+          : `<li><span class="pending"><span class="no">${ch.no}.</span>${esc(ch.title)}（课件待补充）</span></li>`
+        ).join('')}
+      </ol>
+    </article>`).join('');
+
+  const cur = parseHash();
+  if (cur) setTimeout(() => scrollToCourse(cur.course), 50);
+}
+
+/* ---------- 阅读页 ---------- */
+async function renderReader(courseId, no) {
+  $('tocView').style.display = 'none';
+  $('readerView').style.display = '';
+  $('headerInner').classList.add('has-back');
+  $('fab').style.display = 'none';
+  closeDrawer();
+
+  const c = COURSES.find(x => x.id === courseId);
+  if (!c) { location.hash = '#/'; return; }
+  const ch = c.chapters.find(x => x.no === no);
+  if (!ch) { go(courseId); return; }
+
+  document.title = `${ch.title} - ${c.title}`;
+  $('readerCrumb').textContent = c.crumb;
+  $('readerTitle').textContent = `${no}. ${ch.title}`;
+
+  // 上一节 / 下一节
+  const idx = c.chapters.indexOf(ch);
+  const prev = c.chapters[idx - 1], next = c.chapters[idx + 1];
+  $('readerNav').innerHTML =
+    (prev && prev.note ? `<a href="#/course/${c.id}/${prev.no}">← ${prev.no}. ${esc(prev.title)}</a>` : '<span></span>') +
+    (next && next.note ? `<a href="#/course/${c.id}/${next.no}">${next.no}. ${esc(next.title)} →</a>` : '<span></span>');
+
+  const body = $('readerBody');
+  if (!ch.note) { body.innerHTML = '<p class="error-tip">课件待补充</p>'; return; }
+  body.innerHTML = '<p class="loading">加载中...</p>';
+
+  try {
+    const res = await fetch(ch.note);
+    if (!res.ok) throw new Error(res.status);
+    let md = await res.text();
+    // 修正课件内 assets 相对链接(基于 notes/<cid>/ 解析)
+    md = md.replace(/\]\((assets\/)/g, `](${ch.note.replace(/[^/]+\.md$/, '')}$1`);
+    body.innerHTML = marked.parse(md, { breaks: true });
+    body.querySelectorAll('pre code').forEach(b => { try { hljs.highlightElement(b); } catch (e) {} });
+    window.scrollTo(0, 0);
+  } catch (e) {
+    body.innerHTML = '<p class="error-tip">课件加载失败，请检查该章节课件是否存在</p>';
+  }
+}
+
+/* ---------- 主渲染 ---------- */
+function render() {
+  const r = parseHash();
+  if (r && r.no != null) renderReader(r.course, r.no);
+  else renderTOC();
+}
+
+/* ---------- 初始化 ---------- */
+async function init() {
+  // 侧边栏高亮当前课程
+  const markActive = () => {
+    const r = parseHash();
+    document.querySelectorAll('.course-btn').forEach(b =>
+      b.classList.toggle('active', !!r && b.dataset.id === r.course));
+  };
+  const observer = new MutationObserver(markActive);
+  observer.observe(document.body, { childList: true, subtree: true });
+
+  const res = await fetch('data/courses.json');
+  COURSES = await res.json();
+  const n = `共 ${COURSES.length} 门课程`;
+  $('courseCount').textContent = n;
+  $('courseCountM').textContent = n;
+  render();
+
+  $('btnBack').addEventListener('click', () => location.hash = '#/');
+  $('fab').addEventListener('click', openDrawer);
+  $('drawerClose').addEventListener('click', closeDrawer);
+  $('drawerMask').addEventListener('click', e => { if (e.target === e.currentTarget) closeDrawer(); });
+}
+init();
+</script>
+</body>
+</html>

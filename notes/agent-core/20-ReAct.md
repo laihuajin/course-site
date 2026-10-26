@@ -1,0 +1,45 @@
+本次代码变动：
+
+- 新增了`tool/bash_command.py`，提供了执行`bash`命令的工具
+- 在系统提示词中注入了当前操作系统的信息
+- 新建 `Session` 时自动注入工具和提示词
+- 将打印格式进行了简洁化处理
+
+```python
+from agent.model import Model
+from agent.printer import ModelPrinterListener
+from agent.session import Session
+from agent.tool import registry
+import json
+import os
+
+session = Session()
+model = Model()
+listener = ModelPrinterListener(model)
+session.print()
+```
+
+# ReAct
+
+<img src="./assets/tool_calling.svg">
+
+```python
+def query(q: str, session: Session, model: Model):
+    "根据用户提问进行处理"
+    session.add_message({"role": "user", "content": q})
+    # ReAct Loop
+    while True:
+        model.invoke_stream(session)
+        call_msg = registry.invoke(session.messages[-1])
+        if call_msg is None:
+            break
+        else:
+            session.messages += call_msg
+
+query("请帮我分析./agent目录中的核心实现逻辑，将结果放到当前目录的 分析.md 中", session, model)
+
+```
+
+```python
+session.save()
+```

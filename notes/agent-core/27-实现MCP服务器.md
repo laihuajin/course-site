@@ -1,0 +1,60 @@
+# 实现MCP服务器
+
+```python
+# https://github.com/modelcontextprotocol/python-sdk/tree/v1.28.1
+!uv add mcp==1.28.1
+```
+
+```python
+from mcp.server.fastmcp import FastMCP
+```
+
+## 定义MCP服务器
+
+```python
+mcp = FastMCP(
+    "Weather Service",
+    json_response=True,
+)
+```
+
+## 定义工具函数
+
+```python
+# https://www.juhe.cn/ 聚合数据有一些免费API接口，有兴趣的同学自行使用
+@mcp.tool()
+async def get_weather(city: str = "成都") -> dict[str, str]:
+    """Get weather data for a city"""
+    return {
+        "city": city,
+        "temperature": "22",
+        "condition": "多云",
+        "humidity": "65%",
+    }
+```
+
+## 运行服务
+
+```python
+# mcp库底层使用 starlette + uvicorn 启动 http 服务
+mcp.run(transport="streamable-http")
+```
+
+```python
+# for jupyter
+
+import threading
+
+def run():
+    """在独立线程中运行服务器"""
+    mcp.run(transport="streamable-http")
+
+t = threading.Thread(target=run)
+t.start()
+```
+
+## 测试服务
+
+```python
+!npx -y @modelcontextprotocol/inspector@1.0.0
+```
