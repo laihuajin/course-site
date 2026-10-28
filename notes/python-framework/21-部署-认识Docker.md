@@ -46,7 +46,7 @@
 
 ## Docker
 
-![image-20260702135701716](https://resource.duyiedu.com/yuanjin/202608012025285.png)
+![image-20260702135701716](../../site/notes/assets-remote/6e36901911ee-202608012025285.png)
 
 ### Dockerfile
 

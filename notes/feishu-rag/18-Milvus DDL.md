@@ -1,4 +1,4 @@
-![索引流水线：数据源到索引](https://resource.duyiedu.com/yuanjin/20261020133923153.png)
+![索引流水线：数据源到索引](../../site/notes/assets-remote/295610c7d21e-20261020133923153.png)
 
 # Milvus环境搭建
 

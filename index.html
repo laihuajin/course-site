@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>《Agent 应用开发》- 课程笔记</title>
+<title>课程笔记</title>
 <link rel="stylesheet" href="assets/style.css">
 <link rel="stylesheet" href="assets/highlight-theme.css">
 <script src="assets/marked.min.js"></script>
@@ -13,13 +13,11 @@
 <header class="site-header">
   <div class="header-inner" id="headerInner">
     <div class="header-left">
-      <span class="header-tag">COURSE TOC</span>
-      <h1 class="header-title">Agent 应用开发</h1>
       <span class="header-count" id="courseCount">共 0 门课程</span>
     </div>
     <div class="header-mobile">
       <button class="btn-back" id="btnBack">← 返回目录</button>
-      <h1>Agent 应用开发</h1>
+      
       <span class="header-count" id="courseCountM">共 0 门课程</span>
     </div>
   </div>
@@ -111,7 +109,7 @@ function renderTOC() {
   $('tocView').style.display = '';
   $('readerView').style.display = 'none';
   $('fab').style.display = '';
-  document.title = '《Agent 应用开发》- 课程笔记';
+  document.title = "课程笔记";
 
   $('sideList').innerHTML = COURSES.map(c => courseBtnHTML(c, false)).join('');
   $('drawerList').innerHTML = COURSES.map(c => courseBtnHTML(c, false)).join('');
