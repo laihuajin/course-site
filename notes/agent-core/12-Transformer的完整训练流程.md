@@ -1,6 +1,6 @@
 # Transformer的完整训练流程
 
-<img src="../../site/notes/assets-remote/ae9b42cd1c65-202607201528441.svg" alt="transformer_decoder" style="zoom:60%;" />
+<img src="../assets-remote/ae9b42cd1c65-202607201528441.svg" alt="transformer_decoder" style="zoom:60%;" />
 
 ## Transformer Block
 

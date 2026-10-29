@@ -166,8 +166,12 @@ async function renderReader(courseId, no) {
     const res = await fetch(ch.note);
     if (!res.ok) throw new Error(res.status);
     let md = await res.text();
+    const base = ch.note.replace(/[^/]+\.md$/, '');   // 如 notes/python-core/
     // 修正课件内 assets 相对链接(基于 notes/<cid>/ 解析)
-    md = md.replace(/\]\((assets\/)/g, `](${ch.note.replace(/[^/]+\.md$/, '')}$1`);
+    md = md.replace(/\]\((assets\/)/g, `](${base}$1`);
+    // 修正 ../ 前缀: md 位于 notes/<cid>/, ../ 即 notes/ (本地IDE看md与站点两边兼容)
+    md = md.replace(/\]\((?:\.\.\/)+/g, '](notes/');
+    md = md.replace(/src="(?:\.\.\/)+/g, 'src="notes/');
     body.innerHTML = marked.parse(md, { breaks: true });
     body.querySelectorAll('pre code').forEach(b => { try { hljs.highlightElement(b); } catch (e) {} });
     window.scrollTo(0, 0);

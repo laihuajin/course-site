@@ -78,7 +78,7 @@ pyenv --version
 
 1. 右键「此电脑」→「属性」→「高级系统设置」→「环境变量」。
 
-![a911aa22f25bf22fc48a83885299fb4f~tplv-a9rns2rl98-pc_smart_face_crop-v1_512_384](../../site/notes/assets-remote/8ae94fa1b614-202605111101231.webp)
+![a911aa22f25bf22fc48a83885299fb4f~tplv-a9rns2rl98-pc_smart_face_crop-v1_512_384](../assets-remote/8ae94fa1b614-202605111101231.webp)
 
 2. 在**用户变量**（只影响当前用户）或**系统变量**（所有用户）里点「新建」：
    - 变量名：`PYTHON_BUILD_MIRROR_URL`

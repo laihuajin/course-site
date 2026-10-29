@@ -79,7 +79,7 @@ if __name__ == "__main__":
 
 ## 认识概念
 
-![image-20260615181032104](../../site/notes/assets-remote/2988f2a5fbbb-202606151810206.png)
+![image-20260615181032104](../assets-remote/2988f2a5fbbb-202606151810206.png)
 
 - SQLAlchemy
   - engine

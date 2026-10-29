@@ -2,7 +2,7 @@
 
 > 2025年6月，Shopify的CEO Tobi Lütke 在社交媒体上表示，他更喜欢用“上下文工程”这个词来替代“提示词工程”，因为它更准确地描述了为LLM提供充分信息以完成任务的核心技能
 
-<img src="../../site/notes/assets-remote/017754941815-202607301034894.png" alt="image-20260730103412811" style="zoom:50%;" />
+<img src="../assets-remote/017754941815-202607301034894.png" alt="image-20260730103412811" style="zoom:50%;" />
 
 
 
@@ -42,4 +42,4 @@
 
 
 
-<img src="../../site/notes/assets-remote/186001e4158e-202607301128877.png" alt="image-20260730112820794" style="zoom:33%;" />
+<img src="../assets-remote/186001e4158e-202607301128877.png" alt="image-20260730112820794" style="zoom:33%;" />

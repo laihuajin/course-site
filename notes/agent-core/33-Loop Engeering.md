@@ -12,4 +12,4 @@ Loop Engineering 关注的是如何让 Agent 自我推动，最终完成一个�
 - 自主接入工具
 - 不同的子代理分工
 
-<img src="../../site/notes/assets-remote/2ea0c093cd75-202607301319760.png" alt="image-20260730131916647" style="zoom: 33%;" />
+<img src="../assets-remote/2ea0c093cd75-202607301319760.png" alt="image-20260730131916647" style="zoom: 33%;" />

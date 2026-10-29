@@ -31,6 +31,6 @@ Harness Engineering 的核心关注点：
 
 
 
-![Agent model and harness components diagram](../../site/notes/assets-remote/72e55ecb961e-202607301241831.svg)
+![Agent model and harness components diagram](../assets-remote/72e55ecb961e-202607301241831.svg)
 
-<img src="../../site/notes/assets-remote/9333d62588dd-202607301247290.png" alt="image-20260730124725225" style="zoom:33%;" />
+<img src="../assets-remote/9333d62588dd-202607301247290.png" alt="image-20260730124725225" style="zoom:33%;" />
