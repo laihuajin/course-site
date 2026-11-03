@@ -19,7 +19,7 @@ plt.rcParams.update({
 })
 ```
 
-<img src="./assets/核心概念.png" width="100%" >
+<img src="07-Matplotlib - 核心概念_assets/核心概念.png" width="100%" >
 
 # Matplotlib 核心概念
 

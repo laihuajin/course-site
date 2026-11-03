@@ -148,7 +148,7 @@ class DeployInput(BaseModel):
 ## 静态资源访问路径
 
 - 使用工程构建静态产物时，必须特别注意静态资源的访问路径。最终产物会部署在多层子目录下，因此静态资源应优先使用相对路径作为前缀，不要使用以 `/` 开头的绝对路径，否则资源可能无法访问。
-- 例如，应使用 `<script src="./assets/index.js"></script>` 或 `<img src="./assets/logo.png">`，而不要使用 `<script src="/assets/index.js"></script>` 或 `<img src="/assets/logo.png">`。
+- 例如，应使用 `<script src="assets/index.js"></script>` 或 `<img src="assets/logo.png">`，而不要使用 `<script src="/assets/index.js"></script>` 或 `<img src="/assets/logo.png">`。
 - 使用 Vite 等构建工具时，应进行对应配置。例如 Vite 应将 `base` 设置为 `"./"`，确保构建后的 JavaScript、CSS 和图片通过相对路径加载。
 
 ## 产物部署与交付

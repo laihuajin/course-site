@@ -26,7 +26,7 @@ session.add_message({"role": "system", "content": render_prompt("system")})
 
 如果需要大模型去完成一些除了文本输出之外的功能的时候，就需要借助`Tool Calling`
 
-<img src="./assets/tool_calling.svg" >
+<img src="18-tools_assets/tool_calling.svg" >
 
 ## 定义工具函数
 

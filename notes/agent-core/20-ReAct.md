@@ -21,7 +21,7 @@ session.print()
 
 # ReAct
 
-<img src="./assets/tool_calling.svg">
+<img src="20-ReAct_assets/tool_calling.svg">
 
 ```python
 def query(q: str, session: Session, model: Model):

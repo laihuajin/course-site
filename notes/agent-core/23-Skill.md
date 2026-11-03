@@ -21,7 +21,7 @@
 
 而实际上，像这些提示词只有在某些场景下才会触发。因此，我们可以用更加优雅的方式完成提示词的注入。
 
-<img src="./assets/skill.svg">
+<img src="23-Skill_assets/skill.svg">
 
 ## 编写 SKILL
 

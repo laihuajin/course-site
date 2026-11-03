@@ -1,6 +1,6 @@
 # RunnableConfig
 
-<img src="./assets/RunnableConfig.svg">
+<img src="assets/RunnableConfig.svg">
 
 ## 注入和读取配置
 

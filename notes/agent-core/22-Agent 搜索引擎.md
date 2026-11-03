@@ -1,6 +1,6 @@
 # Agent 搜索引擎
 
-<img src="./assets/AI搜索原理.svg">
+<img src="22-Agent 搜索引擎_assets/AI搜索原理.svg">
 
 问题的关键是，`web_search` 工具应该返回给 AI 什么调用结果？
 

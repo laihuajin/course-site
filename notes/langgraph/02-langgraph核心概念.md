@@ -23,7 +23,7 @@ print(isinstance(graph, Runnable))
 
 ## 核心概念
 
-<img src="./assets/图.svg">
+<img src="assets/图.svg">
 
 ### 三个阶段
 
@@ -76,6 +76,6 @@ print(hasattr(Runnable, "abatch"))      # 异步批量执行
 
 图执行完后，得到的结果就是最新的图状态。
 
-<img src="./assets/节点.svg">
+<img src="assets/节点.svg">
 
 图状态本质上是一个字典，字典的每一个字段称之为 channel （通道）

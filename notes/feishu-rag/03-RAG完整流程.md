@@ -1,4 +1,4 @@
-<img src="./assets/rag-overview-index-retrieve-generate.png" alt="rag-overview-index-retrieve-generate" style="zoom:50%;" />
+<img src="assets/rag-overview-index-retrieve-generate.png" alt="rag-overview-index-retrieve-generate" style="zoom:50%;" />
 
 # 索引(Indexing)
 

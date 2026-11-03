@@ -135,7 +135,7 @@ langgraph_python
 
 ### 图结构
 
-<img src="./assets/初始图结构.svg">
+<img src="assets/初始图结构.svg">
 
 ### 测试
 

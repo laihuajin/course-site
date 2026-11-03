@@ -369,4 +369,4 @@ session.print()
 model.invoke_stream(session)
 ```
 
-<img src="./assets/tool_calling.svg" >
+<img src="19-封装tools_assets/tool_calling.svg" >

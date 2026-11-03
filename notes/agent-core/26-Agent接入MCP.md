@@ -1,6 +1,6 @@
 # Agent 接入 MCP
 
-<img src="./assets/mcp.svg">
+<img src="26-Agent接入MCP_assets/mcp.svg">
 
 to do list:
 

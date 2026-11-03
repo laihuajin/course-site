@@ -116,7 +116,7 @@ except Exception as e:
 
 `strides` 是一个元组，表示在每个维度上**前进一个元素需要跳过的字节数**。它决定了 NumPy 如何在内存中「行走」。
 
-<img src="./assets/stride.png" width="500">
+<img src="03-Numpy - 核心概念_assets/stride.png" width="500">
 
 ```python
 # 理解 strides
@@ -149,7 +149,7 @@ print(f"修改转置后原数组:\n{arr}")  # 原数组也被修改了
 
 axis 是一个整数，表示数组的维度索引。它用于指定操作沿哪个维度进行。
 
-<img src="./assets/axis.png" alt="图片描述" width="300" height="200" />
+<img src="03-Numpy - 核心概念_assets/axis.png" alt="图片描述" width="300" height="200" />
 
 ```python
 # axis 的含义
