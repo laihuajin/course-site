@@ -1383,168 +1383,203 @@
       },
       {
         "no": 6,
-        "title": "数据归一化",
-        "note": "notes/feishu-rag/06-数据归一化.md"
+        "title": "飞书公开API",
+        "note": "notes/feishu-rag/06-飞书公开API.md"
       },
       {
         "no": 7,
-        "title": "构建飞书文档树",
-        "note": "notes/feishu-rag/07-构建飞书文档树.md"
+        "title": "数据归一化",
+        "note": "notes/feishu-rag/07-数据归一化.md"
       },
       {
         "no": 8,
-        "title": "文档图片的处理",
-        "note": "notes/feishu-rag/08-文档图片的处理.md"
+        "title": "构建飞书文档树",
+        "note": "notes/feishu-rag/08-构建飞书文档树.md"
       },
       {
         "no": 9,
-        "title": "OCR提取文字",
-        "note": "notes/feishu-rag/09-OCR提取文字.md"
+        "title": "文档图片的处理",
+        "note": "notes/feishu-rag/09-文档图片的处理.md"
       },
       {
         "no": 10,
-        "title": "使用视觉模型提取图片信息",
-        "note": "notes/feishu-rag/10-使用视觉模型提取图片信息.md"
+        "title": "OCR提取文字",
+        "note": "notes/feishu-rag/10-OCR提取文字.md"
       },
       {
         "no": 11,
-        "title": "文档结构化切片",
-        "note": "notes/feishu-rag/11-文档结构化切片.md"
+        "title": "使用视觉模型提取图片信息",
+        "note": "notes/feishu-rag/11-使用视觉模型提取图片信息.md"
       },
       {
         "no": 12,
-        "title": "精细化切片",
-        "note": "notes/feishu-rag/12-精细化切片.md"
+        "title": "文档结构化切片",
+        "note": "notes/feishu-rag/12-文档结构化切片.md"
       },
       {
         "no": 13,
-        "title": "Document Loader",
-        "note": "notes/feishu-rag/13-Document Loader.md"
+        "title": "精细化切片",
+        "note": "notes/feishu-rag/13-精细化切片.md"
       },
       {
         "no": 14,
-        "title": "langchain切片工具",
-        "note": "notes/feishu-rag/14-langchain切片工具.md"
+        "title": "Document Loader",
+        "note": "notes/feishu-rag/14-Document Loader.md"
       },
       {
         "no": 15,
-        "title": "Embedding模型选型",
-        "note": "notes/feishu-rag/15-Embedding模型选型.md"
+        "title": "langchain切片工具",
+        "note": "notes/feishu-rag/15-langchain切片工具.md"
       },
       {
         "no": 16,
-        "title": "创建Embedding模型",
-        "note": "notes/feishu-rag/16-创建Embedding模型.md"
+        "title": "Embedding模型选型",
+        "note": "notes/feishu-rag/16-Embedding模型选型.md"
       },
       {
         "no": 17,
-        "title": "Milvus环境搭建",
-        "note": "notes/feishu-rag/17-Milvus环境搭建.md"
+        "title": "创建Embedding模型",
+        "note": "notes/feishu-rag/17-创建Embedding模型.md"
       },
       {
         "no": 18,
-        "title": "Milvus DDL",
-        "note": "notes/feishu-rag/18-Milvus DDL.md"
+        "title": "Milvus环境搭建",
+        "note": "notes/feishu-rag/18-Milvus环境搭建.md"
       },
       {
         "no": 19,
-        "title": "Milvus DML",
-        "note": "notes/feishu-rag/19-Milvus DML.md"
+        "title": "Milvus DDL",
+        "note": "notes/feishu-rag/19-Milvus DDL.md"
       },
       {
         "no": 20,
-        "title": "Milvus DQL",
-        "note": "notes/feishu-rag/20-Milvus DQL.md"
+        "title": "Milvus DML",
+        "note": "notes/feishu-rag/20-Milvus DML.md"
       },
       {
         "no": 21,
-        "title": "Attu使用技巧",
-        "note": "notes/feishu-rag/21-Attu使用技巧.md"
+        "title": "Milvus DQL",
+        "note": "notes/feishu-rag/21-Milvus DQL.md"
       },
       {
         "no": 22,
-        "title": "分析器",
-        "note": "notes/feishu-rag/22-分析器.md"
+        "title": "Attu使用技巧",
+        "note": "notes/feishu-rag/22-Attu使用技巧.md"
       },
       {
         "no": 23,
-        "title": "全文检索",
-        "note": "notes/feishu-rag/23-全文检索.md"
+        "title": "分析器",
+        "note": "notes/feishu-rag/23-分析器.md"
       },
       {
         "no": 24,
-        "title": "创建飞书文档数据集",
-        "note": "notes/feishu-rag/24-创建飞书文档数据集.md"
+        "title": "全文检索",
+        "note": "notes/feishu-rag/24-全文检索.md"
       },
       {
         "no": 25,
-        "title": "VectorStore",
-        "note": "notes/feishu-rag/25-VectorStore.md"
+        "title": "创建飞书文档数据集",
+        "note": "notes/feishu-rag/25-创建飞书文档数据集.md"
       },
       {
         "no": 26,
-        "title": "加入业务测试数据",
-        "note": "notes/feishu-rag/26-加入业务测试数据.md"
+        "title": "VectorStore",
+        "note": "notes/feishu-rag/26-VectorStore.md"
       },
       {
         "no": 27,
-        "title": "调试技巧",
-        "note": "notes/feishu-rag/27-调试技巧.md"
+        "title": "加入业务测试数据",
+        "note": "notes/feishu-rag/27-加入业务测试数据.md"
       },
       {
         "no": 28,
-        "title": "多源数据接入",
-        "note": "notes/feishu-rag/28-多源数据接入.md"
+        "title": "Bug修复",
+        "note": "notes/feishu-rag/28-Bug修复.md"
       },
       {
         "no": 29,
-        "title": "检索策略优化",
-        "note": "notes/feishu-rag/29-检索策略优化.md"
+        "title": "LangGraph实现索引流水线",
+        "note": "notes/feishu-rag/29-LangGraph实现索引流水线.md"
       },
       {
         "no": 30,
-        "title": "混合检索",
-        "note": "notes/feishu-rag/30-混合检索.md"
+        "title": "功能优化",
+        "note": "notes/feishu-rag/30-功能优化.md"
       },
       {
         "no": 31,
-        "title": "Rerank重排序",
-        "note": null
+        "title": "多路召回+融合排序",
+        "note": "notes/feishu-rag/31-多路召回+融合排序.md"
       },
       {
         "no": 32,
-        "title": "GraphRAG图谱增强",
-        "note": null
+        "title": "LLM Reranker",
+        "note": "notes/feishu-rag/32-LLM Reranker.md"
       },
       {
         "no": 33,
-        "title": "Multi-modal RAG",
-        "note": null
+        "title": "封装检索器",
+        "note": "notes/feishu-rag/33-封装检索器.md"
       },
       {
         "no": 34,
-        "title": "语义路由",
-        "note": null
+        "title": "基于检索结果的内容生成",
+        "note": "notes/feishu-rag/34-基于检索结果的内容生成.md"
       },
       {
         "no": 35,
-        "title": "缓存策略",
-        "note": null
+        "title": "恢复图片展示",
+        "note": "notes/feishu-rag/35-恢复图片展示.md"
       },
       {
         "no": 36,
-        "title": "RAG质量评估体系",
-        "note": null
+        "title": "格式化输出",
+        "note": "notes/feishu-rag/36-格式化输出.md"
       },
       {
         "no": 37,
-        "title": "FastAPI服务封装",
-        "note": null
+        "title": "质量评估",
+        "note": "notes/feishu-rag/37-质量评估.md"
       },
       {
         "no": 38,
-        "title": "生产环境部署",
-        "note": null
+        "title": "Agentic RAG",
+        "note": "notes/feishu-rag/38-Agentic RAG.md"
+      },
+      {
+        "no": 39,
+        "title": "飞书消息接口",
+        "note": "notes/feishu-rag/39-飞书消息接口.md"
+      },
+      {
+        "no": 40,
+        "title": "飞书卡片消息",
+        "note": "notes/feishu-rag/40-飞书卡片消息.md"
+      },
+      {
+        "no": 41,
+        "title": "接入Agent到飞书",
+        "note": "notes/feishu-rag/41-接入Agent到飞书.md"
+      },
+      {
+        "no": 42,
+        "title": "阶段总结",
+        "note": "notes/feishu-rag/42-阶段总结.md"
+      },
+      {
+        "no": 43,
+        "title": "RAG管理系统",
+        "note": "notes/feishu-rag/43-RAG管理系统.md"
+      },
+      {
+        "no": 44,
+        "title": "Graph RAG - 从原文到索引",
+        "note": "notes/feishu-rag/44-Graph RAG - 从原文到索引.md"
+      },
+      {
+        "no": 45,
+        "title": "Graph RAG - 检索与生成",
+        "note": "notes/feishu-rag/45-Graph RAG - 检索与生成.md"
       }
     ]
   },
